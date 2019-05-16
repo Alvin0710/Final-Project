@@ -19,6 +19,10 @@
                                         Navbar
             =========================================================== */
 
+            body {
+                position: relative;
+            }
+
             #navItem {
                 margin-top: -15px;
                 margin-bottom: -23px;
@@ -70,6 +74,59 @@
             #daftar:hover {
                 color: white !important;
                 background: rgba(255, 255, 255, 0.411);
+            }
+
+            .card {
+                width: 18rem;
+                margin-left: 200px;
+                margin-top: 35px;
+            }
+
+            @media screen and (max-width: 480px) {
+                .card {
+                    margin: 15px;
+                }
+
+                nav {
+                    position: fixed;
+                    background-color: white;
+                    margin-top: -8px;
+                    height: 70px;
+
+                }
+
+                #navItem {
+                    margin-top: -5px;
+                    margin-bottom: -23px;
+                    margin-left: 0px;
+                }
+
+                .navbar-toggler {
+                    background: rgba(13, 233, 215, 0.144);
+                    margin-left: 230px;
+                    margin-top: -27px;
+                }
+
+                .navbar-brand img {
+                    height: 45px;
+                    width: 45px;
+                    margin-left: -70px;
+                    margin-top: 4px;
+                }
+
+                #navbarNav {
+                    background-color: rgba(46, 40, 40, 0.705);
+                    padding: 25px;
+                    border-radius: 15px;
+                }
+
+                #titleNav {
+                    margin-top: -40px;
+                    margin-left: -20px;
+                    font-weight: bold;
+                    color: rgba(255, 255, 255, 0.76);
+                    font-size: 20px;
+                }
             }
         </style>
 
@@ -206,8 +263,8 @@
 
         <div class="cotainer">
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="card" style="width: 18rem; margin-left:200px; margin-top:35px;">
+                <div class="col-lg-6 col-sm-1">
+                    <div class="card">
                         <img src="2013-10-26 10.35.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h1 class="card-text" style="text-align:center;">Ikhwan</h1>
@@ -219,8 +276,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="card" style="width: 18rem; margin-left:200px; margin-top:50px;">
+                <div class="col-lg-6 col-sm-1">
+                    <div class="card">
                         <img src="1ed8082f89a039210bef31d7ed42db60.jpeg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h1 class="card-text" style="text-align:center;">Akhwat</h1>
